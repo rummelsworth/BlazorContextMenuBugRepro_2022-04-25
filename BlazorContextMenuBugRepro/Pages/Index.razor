@@ -8,11 +8,11 @@ Welcome to your new app.
 
 <SurveyPrompt Title="How is Blazor working for you?" />
 
-<ContextMenu Id="myMenu">
+<ContextMenu Id="myMenu" ZIndex="1000">
     <Item>Submenu
-        <SubMenu>
+        <SubMenu ZIndex="2000">
             <Item>Sub-submenu
-                <SubMenu>
+                <SubMenu ZIndex="3000">
                     <Item OnClick="@OnClick">Sub-submenu Item 1</Item>
                     <Item OnClick="@OnClick">Sub-submenu Item 2</Item>
                 </SubMenu>
